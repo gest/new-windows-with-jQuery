@@ -1,6 +1,6 @@
 (function($) {
     
-    $.fn.newwindow = function() {
+    $.fn.newWindow = function() {
 	//do ones for pdf/word/ docs options {to extend files}
 //New Window:
 //Open external links in a new window
