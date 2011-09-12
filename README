@@ -1,7 +1,23 @@
 newWindow: a simple plugin for jQuery
 
 -------------------------------
-Introduction
+How to use
+
+To use newWindow first load jQuery and then the plugin:
+
+<script src="jquery.min.js" type="text/javascript"></script>
+<script src="jquery.newwindow.js" type="text/javascript"></script>
+
+Then attach to your links on DOM ready. 
+
+For example, to open links with a class of 'new-window' in a new window, do the following:
+
+  $(document).ready(function() {
+    $('a.new-window').newWindow();
+  });
+  
+-------------------------------
+What it does
 
 newWindow makes it easy to open new browser windows, from anchor links, in a way that complies with Success Criterion 3.2.5 of WCAG 2.0 (http://www.w3.org/TR/WCAG/#consistent-behavior-no-extreme-changes-context).  The aim of which, in this instance, is to prevent any confusion that may result from the appearance of new windows not requested by the user.
 
@@ -24,23 +40,6 @@ This gives a tooltip if a user hovers over the link.
 Styling the assistive text:
 
 Due to design constraints having the text '(opens in a new window)' added to link text is often undesirable. Using the class of 'assistive-text' it is possible to replace this text with an icon, while still making it available to assistive technologies such as screen readers. An example of how this can be done can be found in the file new-window.css
-
--------------------------------
-How to use
-
-To use newWindow first load jQuery and then the plugin:
-
-<script src="jquery.min.js" type="text/javascript"></script>
-<script src="jquery.newwindow.js" type="text/javascript"></script>
-
-Then attach to your links on DOM ready. 
-
-For example to open links with a class of new-window in a new window, do the following:
-
-  $(document).ready(function() {
-    $("a.new-window).newWindow();
-  });
-
 
 -------------------------------
 Copyright (c) 2011 Gareth Eschild. Licensed under the MIT License
