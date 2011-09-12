@@ -13,7 +13,7 @@ Using newWindow on a link will do the following:
 
 Provides a machine-readable indication that a new window will open, allowing the user agent a) to be configured to prevent this from happening or b) to inform the user what will happen. Using javascript to add the target attribute means that this technique can be employed when the document type does not allow the target attribute, e.g. HTML 4.01 Strict or XHTML 1.0 Strict.
 
-2. Appends a span element with a class of 'assistive-text', and containing the phrase '(opens in a new window)', to the link text.
+2. Append a span element with a class of 'assistive-text', and containing the phrase '(opens in a new window)', to the link text.
 
 Makes sure all users, not only those using assistive technology, are aware the link opens in a new window. The class can be used to style the text in a more pleasing way, see below.
 
