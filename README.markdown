@@ -1,7 +1,15 @@
 newWindow: a simple plugin for jQuery
+=====================================
 
--------------------------------
+Introduction
+------------
+
+newWindow makes it easy to open new browser windows, from anchor links, in a way that complies with [Success Criterion 3.2.5 of WCAG 2.0](http://www.w3.org/TR/WCAG/#consistent-behavior-no-extreme-changes-context).
+
+It makes use of the methods outlined in [Techniques for WCAG 2.0](http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/), namely [SCR24](http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/SCR24.html) and [H83](http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/H83), as well as adding a couple of extra accessibility enhancements.
+
 How to use
+----------
 
 To use newWindow first load jQuery and then the plugin:
 
@@ -16,12 +24,8 @@ For example, to open links with a class of 'new-window' in a new window, do the 
     $('a.new-window').newWindow();
   });
   
--------------------------------
 What it does
-
-newWindow makes it easy to open new browser windows, from anchor links, in a way that complies with Success Criterion 3.2.5 of WCAG 2.0 (http://www.w3.org/TR/WCAG/#consistent-behavior-no-extreme-changes-context).  The aim of which, in this instance, is to prevent any confusion that may result from the appearance of new windows not requested by the user.
-
-It makes use of the methods outlined in Techniques for WCAG 2.0(http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/), namely SCR24 (http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/SCR24.html) and H83 (http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/H83), as well as adding a couple of extra accessibility enhancements.
+------------
   
 Using newWindow on a link will do the following:
 
@@ -41,5 +45,7 @@ Styling the assistive text:
 
 Due to design constraints having the text '(opens in a new window)' added to link text is often undesirable. Using the class of 'assistive-text' it is possible to replace this text with an icon, while still making it available to assistive technologies such as screen readers. An example of how this can be done can be found in the file new-window.css
 
--------------------------------
+Licensing
+---------
+
 Copyright (c) 2011 Gareth Eschild. Licensed under the MIT License
