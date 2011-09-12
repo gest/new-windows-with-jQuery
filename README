@@ -14,7 +14,7 @@ Provides a machine-readable indication that a new window will open, allowing the
 
 2. Appends a span element with a class of 'assistive-text', and containing the phrase '(opens in a new window)', to the link text.
 
-Makes sure all users, not only those using assistive technology, are aware the link opens in a new window. The class can be used to style the text in a more pleasing was, see below.
+Makes sure all users, not only those using assistive technology, are aware the link opens in a new window. The class can be used to style the text in a more pleasing way, see below.
 
 3. If there is a title attribute on the link, the phrase '(Opens in a new window)' is added to the value. If there is no title attribute present, then one is created with the value '(This link opens in a new window)'.
 
