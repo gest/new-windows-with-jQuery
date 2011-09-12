@@ -13,17 +13,21 @@ How to use
 
 To use newWindow first load jQuery and then the plugin:
 
-<script src="jquery.min.js" type="text/javascript"></script>
-<script src="jquery.newwindow.js" type="text/javascript"></script>
+<code>
+	<script src="jquery.min.js" type="text/javascript"></script>
+	<script src="jquery.newwindow.js" type="text/javascript"></script>
+</code>
 
 Then attach to your links on DOM ready. 
 
 For example, to open links with a class of 'new-window' in a new window, do the following:
 
+<code>
   $(document).ready(function() {
     $('a.new-window').newWindow();
   });
-  
+</code>
+ 
 What it does
 ------------
   
