@@ -22,7 +22,7 @@ This gives a tooltip if a user hovers over the link.
 
 Styling the assistive text:
 
-Due to design constraints having the text '(opens in a new window)' added to link text is often undesirable. Using the class of 'assistive-text' it is possible to hide replace this text with an icon, while still making it available to assistive technologies such as screen readers. An example of how this can be done can be found in the file new-window.css
+Due to design constraints having the text '(opens in a new window)' added to link text is often undesirable. Using the class of 'assistive-text' it is possible to replace this text with an icon, while still making it available to assistive technologies such as screen readers. An example of how this can be done can be found in the file new-window.css
 
 -------------------------------
 How to use
