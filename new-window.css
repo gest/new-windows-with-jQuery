@@ -1,4 +1,4 @@
-/* styles for newwindow */
+/* styles for newWindow */
 .newwindow-active .assistive-text {
 	display: inline-block;
 	margin-left: 5px;
@@ -6,7 +6,7 @@
 	overflow:hidden;
 	width: 12px;
 	height: 100%;
-	background: url('../img/new-window.png') no-repeat;
+	background: url('new-window.png') no-repeat;
 }
 .newwindow-active:hover .assistive-text,
 .newwindow-active:active .assistive-text,
