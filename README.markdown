@@ -17,17 +17,18 @@ To use newWindow first load jQuery and then the plugin:
     <script src="jquery.min.js" type="text/javascript"></script>
 	<script src="jquery.newwindow.js" type="text/javascript"></script>
 
-
-Then, on DOM ready, call newWindow on any links you want to open in a new window. 
+Then, on DOM ready, call newWindow on any links that you want to open in a new window. 
 
 For example, to open links with a class of 'new-window' in a new window, do the following:
 
     $(document).ready(function() {
      $('a.new-window').newWindow();
     });
+	
+That's all folks!
  
 What will happen
-------------
+----------------
   
 Using newWindow on a link will do the following:
 
@@ -42,7 +43,12 @@ This gives a tooltip if a user hovers over the link.
 
 **Styling the assistive text**
 
-Due to design constraints having the text '(opens in a new window)' added to link text is often undesirable. Using the class of 'assistive-text' it is possible to replace this text with an icon, while still making it available to assistive technologies such as screen readers. An example of how this can be done can be found in the file new-window.css
+Due to design constraints having the text '(opens in a new window)' added to link text is often undesirable. Using the class of 'assistive-text' it is possible to replace this text with an icon, while still making it available to assistive technologies such as screen readers. An example of how this can be done can be found in the file new-window.css.
+
+Notes
+-----
+
+Instead of using CSS to display an icon, the same effect could be achieved by appending an icon image to the link, with an alt attribute value of 'opens in a new window'. This has the added advantage of indicating to sighted users how the link will function even if they have images disabled. However, under certain circumstances, a bug in JAWS 11 prevents the alt text of the image from being read out when it is included alongside other link text, and so the above method was employed instead.
 
 Licensing
 ---------
